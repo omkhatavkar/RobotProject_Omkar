@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20220810 17:36:18.803" generator="Robot 3.2.1 (Python 2.7.14 on win32)">
+<suite source="C:\Users\Admin\eclipse-workspace\Selenium\TestSuite\testsuit.robot" id="s1" name="Testsuit">
+<kw type="setup" name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>I am inside TestSuite SetUp</arg>
+</arguments>
+<msg timestamp="20220810 17:36:19.073" level="INFO">I am inside TestSuite SetUp</msg>
+<status status="PASS" endtime="20220810 17:36:19.073" starttime="20220810 17:36:19.073"></status>
+</kw>
+<test id="s1-t1" name="ThirdTest">
+<kw type="setup" name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>I am inside Test SetUp</arg>
+</arguments>
+<msg timestamp="20220810 17:36:19.075" level="INFO">I am inside Test SetUp</msg>
+<status status="PASS" endtime="20220810 17:36:19.075" starttime="20220810 17:36:19.075"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Third test</arg>
+</arguments>
+<msg timestamp="20220810 17:36:19.076" level="INFO">Third test</msg>
+<status status="PASS" endtime="20220810 17:36:19.076" starttime="20220810 17:36:19.075"></status>
+</kw>
+<kw type="teardown" name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>I am inside Test Teardown</arg>
+</arguments>
+<msg timestamp="20220810 17:36:19.076" level="INFO">I am inside Test Teardown</msg>
+<status status="PASS" endtime="20220810 17:36:19.077" starttime="20220810 17:36:19.076"></status>
+</kw>
+<status status="PASS" endtime="20220810 17:36:19.077" critical="yes" starttime="20220810 17:36:19.073"></status>
+</test>
+<kw type="teardown" name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>I am inside TesSuite Teardown</arg>
+</arguments>
+<msg timestamp="20220810 17:36:19.080" level="INFO">I am inside TesSuite Teardown</msg>
+<status status="PASS" endtime="20220810 17:36:19.080" starttime="20220810 17:36:19.079"></status>
+</kw>
+<status status="PASS" endtime="20220810 17:36:19.080" starttime="20220810 17:36:18.807"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Testsuit" pass="1">Testsuit</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
