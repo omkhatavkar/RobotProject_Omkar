@@ -29,7 +29,8 @@ SecondTest
 ThirdTest
     Log    Third test
     
-
+ForthTest
+    Log    Forth test
 # SeleniumTest
     # Open Browser    https://google.com    chrome
     # Set Browser Implicit Wait    5
