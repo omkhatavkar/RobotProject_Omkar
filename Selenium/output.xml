@@ -1,50 +1,128 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="false" generated="20220810 17:36:18.803" generator="Robot 3.2.1 (Python 2.7.14 on win32)">
-<suite source="C:\Users\Admin\eclipse-workspace\Selenium\TestSuite\testsuit.robot" id="s1" name="Testsuit">
-<kw type="setup" name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
+<robot rpa="false" generated="20220919 22:40:47.463" generator="Robot 3.2.1 (Python 2.7.14 on win32)">
+<suite source="C:\Users\Admin\git\RobotProject_Omkar\Selenium" id="s1" name="Selenium">
+<suite source="C:\Users\Admin\git\RobotProject_Omkar\Selenium\TestSuite" id="s1-s1" name="TestSuite">
+<suite source="C:\Users\Admin\git\RobotProject_Omkar\Selenium\TestSuite\DashBoardPageTest.robot" id="s1-s1-s1" name="DashBoardPageTest">
+<test id="s1-s1-s1-t1" name="VerifyDashboardPage">
+<kw name="SETUP" library="CommonFunctionalities">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
 <arguments>
-<arg>I am inside TestSuite SetUp</arg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20220810 17:36:19.073" level="INFO">I am inside TestSuite SetUp</msg>
-<status status="PASS" endtime="20220810 17:36:19.073" starttime="20220810 17:36:19.073"></status>
+<msg timestamp="20220919 22:40:55.136" level="INFO">Opening browser 'chrome' to base url 'https://demowebshop.tricentis.com/login'.</msg>
+<status status="PASS" endtime="20220919 22:41:01.054" starttime="20220919 22:40:55.135"></status>
 </kw>
-<test id="s1-t1" name="ThirdTest">
-<kw type="setup" name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20220919 22:41:01.197" starttime="20220919 22:41:01.055"></status>
+</kw>
+<kw name="Delete All Cookies" library="SeleniumLibrary">
+<doc>Deletes all cookies.</doc>
+<status status="PASS" endtime="20220919 22:41:01.864" starttime="20220919 22:41:01.200"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
 <arguments>
-<arg>I am inside Test SetUp</arg>
+<arg>${IMPLICIT_TIME}</arg>
 </arguments>
-<msg timestamp="20220810 17:36:19.075" level="INFO">I am inside Test SetUp</msg>
-<status status="PASS" endtime="20220810 17:36:19.075" starttime="20220810 17:36:19.075"></status>
+<status status="PASS" endtime="20220919 22:41:01.873" starttime="20220919 22:41:01.866"></status>
 </kw>
-<kw name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
+<kw name="Set Selenium Timeout" library="SeleniumLibrary">
+<doc>Sets the timeout that is used by various keywords.</doc>
 <arguments>
-<arg>Third test</arg>
+<arg>${TIMEOUT_TIME}</arg>
 </arguments>
-<msg timestamp="20220810 17:36:19.076" level="INFO">Third test</msg>
-<status status="PASS" endtime="20220810 17:36:19.076" starttime="20220810 17:36:19.075"></status>
+<status status="PASS" endtime="20220919 22:41:01.882" starttime="20220919 22:41:01.875"></status>
 </kw>
-<kw type="teardown" name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
+<status status="PASS" endtime="20220919 22:41:01.883" starttime="20220919 22:40:55.115"></status>
+</kw>
+<kw name="LOGIN" library="LoginPage">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
 <arguments>
-<arg>I am inside Test Teardown</arg>
+<arg>name=Email</arg>
+<arg>omkhatavkar@gmail.com</arg>
 </arguments>
-<msg timestamp="20220810 17:36:19.076" level="INFO">I am inside Test Teardown</msg>
-<status status="PASS" endtime="20220810 17:36:19.077" starttime="20220810 17:36:19.076"></status>
+<msg timestamp="20220919 22:41:01.889" level="INFO">Typing text 'omkhatavkar@gmail.com' into text field 'name=Email'.</msg>
+<status status="PASS" endtime="20220919 22:41:02.155" starttime="20220919 22:41:01.887"></status>
 </kw>
-<status status="PASS" endtime="20220810 17:36:19.077" critical="yes" starttime="20220810 17:36:19.073"></status>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=Password</arg>
+<arg>Omkar_123</arg>
+</arguments>
+<msg timestamp="20220919 22:41:02.157" level="INFO">Typing text 'Omkar_123' into text field 'name=Password'.</msg>
+<status status="PASS" endtime="20220919 22:41:02.353" starttime="20220919 22:41:02.156"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//input[@class='button-1 login-button' ]</arg>
+</arguments>
+<msg timestamp="20220919 22:41:02.354" level="INFO">Clicking button 'xpath=//input[@class='button-1 login-button' ]'.</msg>
+<status status="PASS" endtime="20220919 22:41:03.757" starttime="20220919 22:41:02.353"></status>
+</kw>
+<status status="PASS" endtime="20220919 22:41:03.760" starttime="20220919 22:41:01.885"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>StoreTitleVerification</arg>
+</arguments>
+<kw name="StoreTitleVerification">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${StoeTitle}</arg>
+</arguments>
+<msg timestamp="20220919 22:41:03.844" level="INFO">Current page contains text 'Welcome to our store'.</msg>
+<status status="PASS" endtime="20220919 22:41:03.846" starttime="20220919 22:41:03.772"></status>
+</kw>
+<status status="PASS" endtime="20220919 22:41:03.848" starttime="20220919 22:41:03.769"></status>
+</kw>
+<status status="PASS" endtime="20220919 22:41:03.850" starttime="20220919 22:41:03.765"></status>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Page Should Contain Image</arg>
+<arg>${LaptopImage}</arg>
+</arguments>
+<kw name="Page Should Contain Image" library="SeleniumLibrary">
+<doc>Verifies image identified by ``locator`` is found from current page.</doc>
+<arguments>
+<arg>${LaptopImage}</arg>
+</arguments>
+<msg timestamp="20220919 22:41:03.927" level="INFO">Current page contains image '//img[@src='https://demowebshop.tricentis.com/content/images/thumbs/0000224_141-inch-laptop_125.png']'.</msg>
+<status status="PASS" endtime="20220919 22:41:03.928" starttime="20220919 22:41:03.854"></status>
+</kw>
+<status status="PASS" endtime="20220919 22:41:03.930" starttime="20220919 22:41:03.851"></status>
+</kw>
+<kw name="LOGOUT" library="DashboardPage">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>//a[@href='/logout']</arg>
+</arguments>
+<msg timestamp="20220919 22:41:03.940" level="INFO">Clicking link '//a[@href='/logout']'.</msg>
+<status status="PASS" endtime="20220919 22:41:04.864" starttime="20220919 22:41:03.938"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20220919 22:41:07.165" starttime="20220919 22:41:04.866"></status>
+</kw>
+<status status="PASS" endtime="20220919 22:41:07.167" starttime="20220919 22:41:03.935"></status>
+</kw>
+<status status="PASS" endtime="20220919 22:41:07.169" critical="yes" starttime="20220919 22:40:55.111"></status>
 </test>
-<kw type="teardown" name="Log" library="BuiltIn">
-<doc>Logs the given message with the given level.</doc>
-<arguments>
-<arg>I am inside TesSuite Teardown</arg>
-</arguments>
-<msg timestamp="20220810 17:36:19.080" level="INFO">I am inside TesSuite Teardown</msg>
-<status status="PASS" endtime="20220810 17:36:19.080" starttime="20220810 17:36:19.079"></status>
-</kw>
-<status status="PASS" endtime="20220810 17:36:19.080" starttime="20220810 17:36:18.807"></status>
+<status status="PASS" endtime="20220919 22:41:07.173" starttime="20220919 22:40:48.346"></status>
+</suite>
+<status status="PASS" endtime="20220919 22:41:07.185" starttime="20220919 22:40:48.331"></status>
+</suite>
+<status status="PASS" endtime="20220919 22:41:07.194" starttime="20220919 22:40:48.124"></status>
 </suite>
 <statistics>
 <total>
@@ -54,7 +132,9 @@
 <tag>
 </tag>
 <suite>
-<stat fail="0" id="s1" name="Testsuit" pass="1">Testsuit</stat>
+<stat fail="0" id="s1" name="Selenium" pass="1">Selenium</stat>
+<stat fail="0" id="s1-s1" name="TestSuite" pass="1">Selenium.TestSuite</stat>
+<stat fail="0" id="s1-s1-s1" name="DashBoardPageTest" pass="1">Selenium.TestSuite.DashBoardPageTest</stat>
 </suite>
 </statistics>
 <errors>
